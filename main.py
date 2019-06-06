@@ -9,7 +9,6 @@ def func(arr, num):
 
 # DAY 2
 def likes(names):
-    # your code here
     if len(names) < 1:
         return 'no one likes this'
     elif len(names) == 1:
