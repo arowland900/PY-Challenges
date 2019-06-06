@@ -29,9 +29,9 @@ def camel(s):
 
     st = s.replace('-', ' ')
     new_str = st.replace('_', ' ')
+    chars = new_str.split(' ')
     res = ''
 
-    chars = new_str.split(' ')
     for i, c in enumerate(chars):
         if i > 0:
             res += c.capitalize()
