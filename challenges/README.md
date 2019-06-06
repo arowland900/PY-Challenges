@@ -19,3 +19,15 @@ likes ["Alex", "Jacob", "Mark", "Max"] // must be "Alex, Jacob and 2 others like
 ```
 -For 4 or more names, the number in and 2 others simply increases.
 
+#DAY 3:
+- Write a function called to_camel_case that accepts a single string as argument.
+- The to_camel_case function should return the string as camel-cased, removing each _ or - (underscores and dashes) characters and capitalizing the character following the _ or -.
+
+```
+Test Cases:
+
+to_camel_case( 'coding-rocks' ) # => 'codingRocks'
+to_camel_case( 'banana_Turkey_potato' ) # => 'bananaTurkeyPotato'
+to_camel_case( 'Mama-mia' ) # => 'MamaMia'
+to_camel_case( 'A_b_c' ) # => 'ABC'
+```

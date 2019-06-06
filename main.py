@@ -1,4 +1,4 @@
-# DAY 1
+# DAY 1:
 def func(arr, num):
     for i in range(0, len(arr) - 1):
         for j in range(1, len(arr)):
@@ -7,7 +7,9 @@ def func(arr, num):
 
     return False
 
-# DAY 2
+# DAY 2:
+
+
 def likes(names):
     if len(names) < 1:
         return 'no one likes this'
@@ -19,3 +21,21 @@ def likes(names):
         return names[0] + ', ' + names[1] + ' and ' + names[2] + ' like this'
     else:
         return names[0] + ', ' + names[1] + ' and ' + str(len(names) - 2) + ' others like this'
+
+# DAY 3:
+
+
+def camel(s):
+
+    st = s.replace('-', ' ')
+    new_str = st.replace('_', ' ')
+    res = ''
+
+    chars = new_str.split(' ')
+    for i, c in enumerate(chars):
+        if i > 0:
+            res += c.capitalize()
+        else:
+            res += c
+
+    return(res)
