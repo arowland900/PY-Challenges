@@ -1,7 +1,7 @@
 # DAY 1:
 def func(arr, num):
     for i in range(0, len(arr) - 1):
-        for j in range(1, len(arr)):
+        for j in range(i+1, len(arr)):
             if arr[i] + arr[j] == num:
                 return True
 
@@ -26,10 +26,8 @@ def likes(names):
 
 
 def camel(s):
-
-    st = s.replace('-', ' ')
-    new_str = st.replace('_', ' ')
-    chars = new_str.split(' ')
+    
+    chars = s.replace('-', ' ').replace('_', ' ').split(' ')
     res = ''
 
     for i, c in enumerate(chars):
